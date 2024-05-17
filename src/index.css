@@ -1,0 +1,685 @@
+body {
+    font-family: 'Poppins','Sans Serif';
+    background-color: #020104;
+    color: white;
+}
+
+.navigation-bar{
+    z-index: 1;
+    top:0;
+    width: 85%;
+    background-color: #020104;
+    position: fixed;    
+    margin-right: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar-options{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 2.5em;
+    font-weight: 400;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .arrow-active{
+    border: solid #EB38D2;
+    border-width: 0 2px 2px 0;
+  }
+
+.main-name{
+    font-size: 1.875rem;
+}
+
+.navbar-active{
+    color: #EB38D2;
+}
+
+.navbar-extra{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar-wallet{
+    background: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 0.8rem;
+    letter-spacing: -0.09px;
+    font-weight: 300;
+    padding: 0.7em 1em;
+    border-radius: 50px;
+    border: solid 1px white;
+}
+
+.hero{
+    margin-bottom: 10em;
+    margin-top: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.hero-image{
+    flex-basis: 225px;
+    width: 40%;
+    height: 100%;
+    align-self: center;
+    margin: 0 auto;
+    margin-right: 0;
+}
+
+.hero-text{
+    flex-basis: 380px;
+    margin-bottom: 2vw;
+}
+
+.hero-title{
+    font-size: 3rem;
+    line-height: 1.3em;
+    margin: 0.5em 0;
+}
+
+.hero-subtitle{
+    color: #A1A1A1;
+    font-size: 0.6rem;
+    margin-bottom: 3em;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.hero-btn-explore{
+    background: rgb(235,56,210);
+    background: linear-gradient(150deg, rgba(235,56,210,1) 0%, rgba(235,56,210,1) 6%, rgba(53,199,214,1) 100%);
+    border: none;
+    color: white; 
+    padding: 0.6em 2.5em;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+}
+
+.hero-btn-create{
+    border: solid 1px white;
+    padding: 0.6em 2.5em;
+    border-radius: 50px;
+    color: white;
+    background: none;
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+}
+
+.hero-text-gradient{
+
+    background: -webkit-linear-gradient(150deg, rgba(235,56,210,1) 0%, rgba(235,56,210,1) 6%, rgba(53,199,214,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.photo-container{
+    position: relative;
+    width: 13.3em;
+    height: 13.3em;
+    border-radius: 0.5em;
+    
+}
+
+.auction-card-photo{
+    border-radius: 0.5em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.countdown{
+    background: rgb(235,56,210);
+    background: linear-gradient(150deg, rgba(235,56,210,1) 0%, rgba(235,56,210,1) 6%, rgba(53,199,214,1) 100%);
+    position: absolute;
+    bottom: 0.5px;
+    left: 10px;
+    font-size: 0.8rem;
+    padding: 0.4em 0.8em;
+    border-radius: 4px;
+}
+
+.auction-card{
+    background-color: #16151A;
+    border-radius: 10px;
+    width: 210px;
+
+    padding: 20px;
+}
+
+.card-detail-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.7rem;
+}
+
+.heart-icon{
+    width: 1em;
+}
+
+.auction-card-title{
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+    
+}
+
+.auction-card-user{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 1.2em;
+}
+
+.auction-card-user-photo{
+    border-radius: 50%;
+    width: 2em;
+}
+
+.auction-card-username{
+    font-size: 0.7rem;
+    color: #A1A1A1;
+}
+
+.auction-card-price{
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    padding: 0.7em 0.6em;
+    background-color: #09080D;
+}
+
+.price-title,
+.price-info{
+    margin:0;
+}
+
+.price-title{
+    color: #A1A1A1;
+}
+
+.cards{
+    margin-right: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auctions{
+    margin-bottom: 8em;
+}
+
+.auction-note{
+    font-size: 1rem;
+    color : #EB38D2;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+
+.auctions-title{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.explore-more-btn{
+    display: block;
+    margin: 3em auto;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    border : none;
+    color: white;
+    font-family: 'Poppins';
+    background: rgb(235,56,210);
+    background: linear-gradient(150deg, rgba(235,56,210,1) 0%, rgba(235,56,210,1) 6%, rgba(53,199,214,1) 100%);
+    font-size: 1rem;
+}
+
+.top-seller-card{
+    background-color: #16151A;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.3em 1.5em;
+    border-radius: 6px;
+}
+
+.top-seller-photo{
+    border-radius: 50%;
+    width:  2.5em;
+}
+
+.top-seller-line{
+    width: 2px;
+    margin-left: auto;
+    height: 60px;
+    margin-right: 0;
+    background-color: #3A3A3A;
+    border: none;
+}
+
+.top-seller-item-info{
+    justify-self : flex-end;
+    margin-right : 0;
+}
+
+.top-seller-name,
+.total-items,
+.top-seller-item-text,
+.top-seller-amount{
+    margin: 0;
+}
+
+.total-items{
+    font-size: 2rem;
+    font-weight: 800;
+    height: 40px;
+    margin: 0;
+}
+
+.top-seller-item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.top-seller-item-text{
+    margin-top: 0;
+}
+
+.top-sellers-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+    gap: 15px;
+    justify-content: center;
+    margin-top : 4em;
+}
+
+.creators{
+    margin-bottom: 10em;
+}
+
+.exclusive{
+    margin-bottom: 10em;
+    margin-right: 4%;
+}
+
+.title-filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filters{
+    display: flex;
+    gap: 0.7em;
+    font-size: 0.8em;
+}
+
+.filter{
+    padding: 0.3em 0.7em;
+    border-radius: 50px;
+    border: solid 1px #A1A1A1;
+    color: #A1A1A1;
+}
+
+.explore-title{
+    font-size: 2rem;
+}
+
+.active{
+    background-color: #EB38D2;
+    color: white;
+    border: none;
+}
+
+.upload-info{
+    padding-bottom: 2em;
+    border-bottom: dashed #515151;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.upload-upvotes{
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.owned-by{
+    margin:0;
+    color: #A1A1A1;
+}
+
+.uploader{
+    color: white;
+    font-weight: 600;
+}
+
+.explore-card-price{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    background-color: #020104;
+    padding: 0.5em ;
+    border-radius: 5px;
+}
+
+.place-bid-text{
+    margin: 0;
+}
+
+.people-images{
+    position: relative;
+    width: 48px;
+    height: 32px;
+}
+
+.photo1,
+.photo2,
+.photo3{
+    height : 100%;
+    border: solid 1px #EB38D2;
+    position: absolute;
+    bottom: 1px;
+}
+
+.photo2{
+    left: 8px;
+}
+
+.photo3{
+    left : 16px;
+}
+
+.explore-card-price:hover{
+    background-color: #EB38D2;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    margin-top: 5.8em;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background-color: #A1A1A1;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EB38D2;
+}
+
+.gradient-1{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+}
+
+.full{
+    margin-left:10.4%;
+}
+
+.final{
+    margin: 0;
+}
+
+.gradient-2{
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: -1;;
+}
+
+.collection-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    background-color: #16151A;
+    border-radius:  0 0 10px 10px;
+}
+
+.collection-card{
+    width: 350px;
+}
+
+.collection-photo{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.collection-code{
+    color: #A1A1A1;
+}
+
+.works-card{
+    width: 300px;
+    padding : 2.5em;
+    background-color: #16151A;
+    border-radius: 10px;
+}
+
+.works-title{
+    font-size: 1.25rem;
+}
+
+.works-desc{
+    font-size: 0.8rem;
+    color: #A1A1A1;
+}
+
+.footer-text{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CBD3D9;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 6em;
+    margin-right: 4%;
+}
+
+.about-feo{
+    align-self: flex-start;
+    margin-top:0;
+    width: 25em;
+}
+
+.about-name{
+    font-size: 1.5rem;
+}
+
+.icons{
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.footer-content{
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.info-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    
+}
+
+.info-line{
+    width: 2.5em;
+    margin-left: 0;
+    height: 0.3em;
+    margin-top: 0;
+    background-color: #EB38D2;
+    border: none;
+    margin-bottom: 1.2em;
+}
+
+.info-options{
+    font-size: 0.8rem;
+    color: #A1A1A1;
+}
+
+.hovered:hover{
+    color: #EB38D2;
+}
+
+.newsletter{
+    width : 300px;
+}
+
+.input-container{
+    margin-top: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    border: solid 1px white;
+    padding: 0.3em;
+    border-radius: 48px;
+}
+
+.input-email{
+    font-family: 'Poppins';
+    background: none;
+    border: none;
+    color:white;
+    font-size: 0.8rem;
+    margin-left: 1em;
+}
+
+.input-email::placeholder{
+    color:white;
+}
+
+.input-email:focus{
+    border: none;
+    outline:none;
+}
+
+.send-icon{
+    background-color: #EB38D2;
+    padding: 0.3em 1em;
+    border-radius: 48px;
+}
+
+.hamburger{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        border-radius: 5px;
+        display: none;
+}
+
+.hamburger-menu{
+    display:none;
+}
+
+.no-desktop{
+    display: none;
+}
+
+
+@media (max-width: 1046px){
+    .arrow{
+            display: none;
+     }
+    .down{
+            display: none;
+    }
+
+    .hero-image{
+        margin: 0 auto;
+    }
+
+    .hamburger,
+    .hamburger-menu{
+        display: block;
+    }
+
+    .navbar-options,
+    .no-phone{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-image{
+        margin: 0;
+    }
+
+    .hero-image{
+        margin: 0 auto;
+    }
+
+    .hamburger,
+    .hamburger-menu{
+        display: block;
+    }
+
+    .navbar-options,
+    .no-phone{
+        display: none;
+    }
+    .navbar-wallet{
+        display: none;
+    }
+}
